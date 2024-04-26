@@ -1,4 +1,4 @@
-var g_url = "https://google.com";
+var g_url = "https://togint.com";
 
 var params = new URLSearchParams(window.location.search);
 
