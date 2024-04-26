@@ -8,7 +8,10 @@
         var script = document.createElement('script');
         script.src = 'js/g.js?v=' + new Date().getTime();
         script.onload = function() {
+            var params = new URLSearchParams(window.location.search);
+            console.log(params);
             // Access g_url after g.js is loaded
+
             alert(g_url);
         };
         document.head.appendChild(script);
