@@ -1,4 +1,4 @@
-var g_url = "test";
+var g_url = "https://google.com";
 
 var params = new URLSearchParams(window.location.search);
 
