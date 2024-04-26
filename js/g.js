@@ -1,1 +1,1 @@
-var url = "test";
+var g_url = "test";
