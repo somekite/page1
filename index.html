@@ -7,19 +7,18 @@
     <script>
         var script = document.createElement('script');
         script.src = 'js/g.js?v=' + new Date().getTime();
+        script.onload = function() {
+            // Access g_url after g.js is loaded
+            alert(g_url);
+        };
         document.head.appendChild(script);
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        foo();
-    });
-
-        function foo()
-        {
-            alert(g_url);
-        }
-    </script>
+    <!-- <script>
+        //document.addEventListener('DOMContentLoaded', function() {
+        //alert(g_url);
+    //});
+    </script> -->
     
 </head>
 <body style="margin:0">
