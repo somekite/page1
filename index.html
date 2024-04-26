@@ -9,7 +9,11 @@
         script.src = 'js/g.js?v=' + new Date().getTime();
         script.onload = function() {
             var params = new URLSearchParams(window.location.search);
-            console.log(params);
+            if(params.has('g')) {
+                var gid = params.get('g');
+                alert(gid);
+            }
+            
             // Access g_url after g.js is loaded
 
             alert(g_url);
